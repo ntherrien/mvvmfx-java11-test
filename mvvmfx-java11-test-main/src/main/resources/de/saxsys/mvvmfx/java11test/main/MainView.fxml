@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.StatusBar?>
+
+<VBox prefHeight="766.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.saxsys.mvvmfx.java11test.main.MainView">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="menuItem_ImportFromDirectory" mnemonicParsing="false" onAction="#onRestoreConfiguration" text="Restore configuration..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem disable="true" mnemonicParsing="false" onAction="#onBackupConfiguration" text="Backup configuration..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#onExit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#createUri" text="Create new ..." />
+              <MenuItem mnemonicParsing="false" onAction="#deleteUri" text="Delete selected ..." />
+                  <MenuItem mnemonicParsing="false" onAction="#editUri" text="Edit selected ..." />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="App">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onDisplayAppInformation" text="Display App Information..." />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onAbout" text="About the App..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.4" orientation="VERTICAL" prefHeight="556.0" prefWidth="780.0" VBox.vgrow="ALWAYS">
+         <items>
+             <TitledPane animated="false" collapsible="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="219.0" prefWidth="600.0" text="Configured Uris">
+                 <content>
+           </content>
+               <content>
+                  <HBox>
+                     <children>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ListView fx:id="listView_items" onMouseClicked="#onItemClicked" prefHeight="200.0" prefWidth="200.0" GridPane.vgrow="ALWAYS" />
+                              <AnchorPane minHeight="-Infinity" prefHeight="135.0" prefWidth="45.0" GridPane.columnIndex="1" GridPane.vgrow="NEVER">
+                                  <children>
+                                  <Button fx:id="button_create_item" layoutX="7.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#createUri" prefHeight="29.0" prefWidth="38.0">
+                                      <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                              <image>
+                                                  <Image url="@/de/saxsys/mvvmfx/java11test/common/images/Add.png" />
+                                              </image>
+                                          </ImageView>
+                                      </graphic>
+                                      <tooltip>
+                                          <Tooltip text="Add new connection" />
+                                      </tooltip>
+                                    </Button>
+                                  <Button fx:id="button_delete_item" layoutX="7.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#deleteUri" prefHeight="25.0" prefWidth="29.0">
+                                      <graphic>
+                                          <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                              <image>
+                                                  <Image url="@/de/saxsys/mvvmfx/java11test/common/images/remove.png" />
+                                              </image>
+                                          </ImageView>
+                                      </graphic>
+                                      <tooltip>
+                                          <Tooltip text="Remove selected connection" />
+                                      </tooltip>
+                                    </Button>
+                                  <Button fx:id="button_edit_item" layoutX="7.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#editUri" prefHeight="29.0" prefWidth="38.0">
+                                      <graphic>
+                                          <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                              <image>
+                                                  <Image url="@/de/saxsys/mvvmfx/java11test/common/images/Pencil.png" />
+                                              </image>
+                                          </ImageView>
+                                      </graphic>
+                                      <tooltip>
+                                          <Tooltip text="Edit selected connection" />
+                                      </tooltip>
+                                    </Button>
+                                  </children>
+                              </AnchorPane>
+                           </children>
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding>
+                        </GridPane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="254.0" HBox.hgrow="NEVER">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Configuration Summary:" />
+                              <Label layoutX="14.0" layoutY="163.0" text="Custom Response:" />
+                              <Label fx:id="label_custom_enabled" layoutX="166.0" layoutY="163.0" text="disabled" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </content>
+             </TitledPane>
+            <TitledPane animated="false" collapsible="false" maxHeight="1.7976931348623157E308" prefHeight="219.0" prefWidth="600.0" text="Real-time Simulation Log">
+               <content>
+                  <TextArea fx:id="textArea_logs" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+         </items>
+      </SplitPane>
+      <StatusBar fx:id="statusbar" text="" />
+   </children>
+</VBox>
