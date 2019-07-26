@@ -1,0 +1,94 @@
+"C:\Program Files\Java\jdk-11.0.2\bin\java.exe" -Dmaven.multiModuleProjectDirectory=C:\studio\projects\mvvmfx-java11-test\mvvmfx-java11-test-main "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\plugins\maven\lib\maven3\bin\m2.conf" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\lib\idea_rt.jar=53423:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar" org.codehaus.classworlds.Launcher -Didea.version2019.1.1 org.openjfx:javafx-maven-plugin:0.0.2:run
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for de.saxsys.mvvmfx:mvvmfx-java11-test-main:jar:1.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.openjfx:javafx-maven-plugin @ de.saxsys.mvvmfx:mvvmfx-java11-test-main:[unknown-version], C:\studio\projects\mvvmfx-java11-test\mvvmfx-java11-test-main\pom.xml, line 71, column 21
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mvvmfx-java11-test-main 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- javafx-maven-plugin:0.0.2:run (default-cli) @ mvvmfx-java11-test-main ---
+Error occurred during initialization of boot layer
+java.lang.module.FindException: Unable to derive module descriptor for C:\Users\ntherrien\.m2\repository\de\saxsys\mvvmfx-validation\1.8.0\mvvmfx-validation-1.8.0.jar
+Caused by: java.lang.module.FindException: Automatic-Module-Name: de.saxsys.mvvmfx-validation: Invalid module name: 'mvvmfx-validation' is not a Java identifier
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:447)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:409)
+	at org.openjfx.JavaFXRunMojo.execute(JavaFXRunMojo.java:97)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+[ERROR] Command execution failed.
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:447)
+	at org.openjfx.JavaFXBaseMojo.executeCommandLine(JavaFXBaseMojo.java:409)
+	at org.openjfx.JavaFXRunMojo.execute(JavaFXRunMojo.java:97)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.712 s
+[INFO] Finished at: 2019-07-26T09:21:33-04:00
+[INFO] Final Memory: 11M/60M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.openjfx:javafx-maven-plugin:0.0.2:run (default-cli) on project mvvmfx-java11-test-main: Error: Command execution failed. Process exited with an error: 1 (Exit value: 1) -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+Process finished with exit code 1

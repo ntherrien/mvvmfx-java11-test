@@ -68,6 +68,15 @@
                 </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.2</version>
+                <configuration>
+                    <mainClass>de.saxsys.mvvmfx.java11test.main.MainApplication</mainClass>
+                </configuration>
+            </plugin>
+
 
         </plugins>
     </build>
