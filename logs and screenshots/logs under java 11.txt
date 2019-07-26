@@ -1,0 +1,45 @@
+"C:\Program Files\Java\jdk-11.0.2\bin\java.exe" --add-modules javafx.base,javafx.graphics --add-reads javafx.base=ALL-UNNAMED --add-reads javafx.graphics=ALL-UNNAMED "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\lib\idea_rt.jar=51912:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.1\bin" -Dfile.encoding=UTF-8 -classpath C:\studio\projects\mvvmfx-java11-test\mvvmfx-java11-test-main\target\classes;C:\studio\projects\mvvmfx-java11-test\mvvmfx-java11-test-common\target\classes;C:\Users\ntherrien\.m2\repository\de\saxsys\mvvmfx\1.8.0\mvvmfx-1.8.0.jar;C:\Users\ntherrien\.m2\repository\net\jodah\typetools\0.6.1\typetools-0.6.1.jar;C:\Users\ntherrien\.m2\repository\eu\lestard\doc-annotations\0.2\doc-annotations-0.2.jar;C:\Users\ntherrien\.m2\repository\de\saxsys\mvvmfx-validation\1.8.0\mvvmfx-validation-1.8.0.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-controls\11.0.2\javafx-controls-11.0.2.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-controls\11.0.2\javafx-controls-11.0.2-win.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-graphics\11.0.2\javafx-graphics-11.0.2.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-graphics\11.0.2\javafx-graphics-11.0.2-win.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-fxml\11.0.2\javafx-fxml-11.0.2.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-fxml\11.0.2\javafx-fxml-11.0.2-win.jar;C:\Users\ntherrien\.m2\repository\org\controlsfx\controlsfx\11.0.0\controlsfx-11.0.0.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-media\11\javafx-media-11.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-media\11\javafx-media-11-win.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-web\11\javafx-web-11.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-web\11\javafx-web-11-win.jar;C:\Users\ntherrien\.m2\repository\org\fxmisc\richtext\richtextfx\0.10.1\richtextfx-0.10.1.jar;C:\Users\ntherrien\.m2\repository\org\reactfx\reactfx\2.0-M5\reactfx-2.0-M5.jar;C:\Users\ntherrien\.m2\repository\org\fxmisc\undo\undofx\2.1.0\undofx-2.1.0.jar;C:\Users\ntherrien\.m2\repository\org\fxmisc\flowless\flowless\0.6\flowless-0.6.jar;C:\Users\ntherrien\.m2\repository\org\fxmisc\wellbehaved\wellbehavedfx\0.3.3\wellbehavedfx-0.3.3.jar;C:\Users\ntherrien\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\ntherrien\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\ntherrien\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\ntherrien\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ntherrien\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\ntherrien\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ntherrien\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ntherrien\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ntherrien\.m2\repository\com\github\jonpeterson\jackson-module-model-versioning\1.2.2\jackson-module-model-versioning-1.2.2.jar;C:\Users\ntherrien\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\ntherrien\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\ntherrien\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar -p C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\ntherrien\.m2\repository\org\openjfx\javafx-graphics\11.0.2\javafx-graphics-11.0.2-win.jar de.saxsys.mvvmfx.java11test.main.MainApplication
+08:36:43.394 [JavaFX Application Thread] INFO de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication - Application starting...
+08:36:43.399 [JavaFX Application Thread] INFO de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication - Displaying Connection Dialog
+Exception in Application start method
+08:36:43.425 [JavaFX Application Thread] INFO de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication - Application stopping...
+08:36:43.425 [JavaFX Application Thread] INFO de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication - Shutting down services...
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:464)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:363)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: java.lang.RuntimeException: Exception in Application start method
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalAccessError: class com.sun.javafx.fxml.FXMLLoaderHelper (in unnamed module @0x422336a) cannot access class com.sun.javafx.util.Utils (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.util to unnamed module @0x422336a
+	at com.sun.javafx.fxml.FXMLLoaderHelper.<clinit>(FXMLLoaderHelper.java:38)
+	at javafx.fxml.FXMLLoader.<clinit>(FXMLLoader.java:2056)
+	at de.saxsys.mvvmfx.internal.viewloader.FxmlViewLoader.createFxmlLoader(FxmlViewLoader.java:288)
+	at de.saxsys.mvvmfx.internal.viewloader.FxmlViewLoader.loadFxmlViewTuple(FxmlViewLoader.java:214)
+	at de.saxsys.mvvmfx.internal.viewloader.FxmlViewLoader.loadFxmlViewTuple(FxmlViewLoader.java:82)
+	at de.saxsys.mvvmfx.FluentViewLoader$FxmlViewStep.load(FluentViewLoader.java:333)
+	at de.saxsys.mvvmfx.java11test.common.javafx.dialog.connection.ConnectionDialog.<init>(ConnectionDialog.java:45)
+	at de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication.showConnectionDialog(GenericJavaFxApplication.java:116)
+	at de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication.start(GenericJavaFxApplication.java:92)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	... 1 more
+Exception running application de.saxsys.mvvmfx.java11test.main.MainApplication
+08:36:43.433 [Thread-3] INFO de.saxsys.mvvmfx.java11test.common.javafx.application.GenericJavaFxApplication - Shutdown hook triggerred.
+
+Process finished with exit code 1
